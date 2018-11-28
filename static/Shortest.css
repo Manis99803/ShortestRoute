@@ -1,0 +1,151 @@
+td
+    {
+     display:none;
+    }
+    #MenuBar
+    {
+      height:125px;
+      width:100%;
+      background-color:#333;
+    }
+
+    #select1
+    {
+      width: 80%;
+      height: 35px;
+      background-color: white;
+      position: absolute;
+      top:5%;
+      left:25px;
+      font-size:20px;
+    }
+    #select2
+    {
+      width: 80%;
+      height: 35px;
+      background-color: white;
+      position: absolute;
+      top:10%;
+      left:25px;
+      font-size:20px;
+    }
+    input[type=submit]
+    {
+      width:80px;
+      height:35px;
+      position: absolute;
+      left:25px;
+      top:15%;
+      font-size:20px;
+      color:#FFFFFF;
+      font-weight: bold;
+      background-color: #333;
+
+    }
+    #Title
+    {
+      font-size:50px;
+      color:white;
+      position: absolute;
+      left:27%;
+    }
+    #menu
+    {
+      float:left;
+      width:20%;
+      position: absolute;
+      left:-0.5%;
+      height:84%;
+      background: #E4E4E4;
+      border:2px solid black;
+
+    }
+    #map
+    {
+      float:right;
+      width:80%;
+      height:84%;
+      position: absolute;
+      right:0px;
+    }
+    #vertical
+    {
+      border:1px solid black;
+      position: absolute;
+      left:19.8%;
+      height:84%;
+    }
+    .Link
+    {
+      display: none;
+    }
+    #boxSubmit
+    {
+      position: absolute;
+      top:30px;
+      float:right;
+      font-size:15px;
+      width:200px;
+      height: 20px;
+      background-color: black;
+      color:white;
+    }
+    .data
+    {
+      display:none;
+    }
+    .aboutDescription
+      {
+        font-size:30px;
+        color:white;
+        margin-left:5%;
+      } 
+      #aboutBar
+      {
+        width:100%;
+        height:250px;
+        background-color: #333;
+        position: absolute;
+        bottom:-12%;
+        left:0;
+      }
+      body
+      {
+        margin: 0px;
+      }
+      #getPath
+    {
+      position: absolute;
+      left:25px;
+      top:-2.5%;
+      color:black;
+      font-size:25px;
+    }
+      #Menubar
+      {
+        width:100%;
+        height:60px;
+        background-color: #333;
+      }
+      #Title:hover
+      {
+        color:orange;
+      }
+      .MenuLink
+      {
+        font-size:25px;
+        text-decoration: none;
+        color:white;
+      }
+      #Title
+      {
+        font-size:35px;
+        text-decoration: none;
+        color:white;
+        position: absolute;
+        top:5px;
+        left:15px;
+      }
+      .place{
+        display: none;
+      }

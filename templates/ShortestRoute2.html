@@ -1,0 +1,48 @@
+<html>
+  <head>
+      <title>Shortest Route</title>
+      <link rel="stylesheet" type="text/css"
+           href = "{{ url_for('static', filename = 'Google.css') }}" / >
+      <link rel="stylesheet" type="text/css"
+           href = "{{ url_for('static', filename = 'Shortest.css') }}" / >
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+      <script src="http://maps.google.com/maps/api/js?sensor=false" 
+            type="text/javascript"></script>
+  </head> 
+  <body>
+        <!-- Getting the dictionary from the falsk and creating div for each location,every div will have placeName, latitude ,longitude -->
+        {% for key,value in rows.items() %}
+        <div class="place">
+          <p class="placeName">{{ key }}</p>
+          <p class="lat">{{ value[0] }} </p>
+          <p class="long">{{ value[1] }} </p>
+        </div>
+         {% endfor %}
+  
+  
+      <div id='Menubar'>
+        <a href='#' id='Title'>Shortest Route</a>
+      </div>
+    <br>
+  
+    <div id="menu">
+      <form action="{{ url_for('getShortestPath') }}" method="POST">
+        <p id="getType">Get Path</p>
+         <input type='text' id='select1' name='Source' placeholder="Source"><br>
+         <input type='text' id='select2' name='Destination' placeholder="Destination"><br>
+        <br><br><br>
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <div id="vertical">
+    </div>
+    <div id="aboutBar">
+      <p class='aboutDescription'><u>About</u></p>
+      <p class='aboutDescription'>Artificial Intelligence Project<br>
+      Prorject Title : Google map simulation for the Bengaluru</p>
+    </div>
+	 <div id="map" style="width: 1500px; height: 770px;"></div>
+    <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'ShortestRoute2.js') }}" ></script>
+  </body>
+</html>
